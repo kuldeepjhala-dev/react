@@ -1,12 +1,14 @@
 //NO need to import React and React-dom files
-import Hello from "./Hello";
-import { Hello2 } from "./Hello";
+import Hello from "./components/Hello";
+import { Hello2 } from "./components/Hello";
+import Greeting from "./components/Greeting";
 
 function App() {
   return (
     <>
       <Hello />
       <Hello2 />
+      <Greeting />
     </>
   );
 }
