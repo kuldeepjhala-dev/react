@@ -1,3 +1,9 @@
 .bg-dark {
     background-color: darkgray;
 }
+
+.container {
+    border: 2px red solid;
+    padding: 5px;
+    margin: 5px;
+}
