@@ -1,13 +1,15 @@
+import Hello from "./components/Hello";
 import Greeting from "./components/Greeting";
 import Greetings2 from "./components/Greetings2";
-import Hello from "./components/Hello";
+import Greeting3 from "./components/Greeting3";
 
 function App() {
   return (
     <>
       {/* <Hello /> */}
       {/* <Greeting /> */}
-      <Greetings2 />
+      {/* <Greetings2 /> */}
+      <Greeting3 />
     </>
   );
 }
