@@ -12,7 +12,8 @@ function Greeting(props) {
   return (
     <div>
       <h1>
-        Hey {props.firstName} {props.lastName} {props.age} {props.userArr[0]}{props.userObj.hobbies}
+        Hey {props.firstName} {props.lastName} {props.age} {props.userArr[0]}
+        {props.userObj.hobbies}
         {/*we are using prop object to fetch the passed details.*/}
       </h1>
       <h1>
