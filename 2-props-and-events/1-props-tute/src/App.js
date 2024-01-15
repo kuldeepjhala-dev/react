@@ -29,10 +29,8 @@ function App() {
             {/* <ParentProps firstName="Kuldeep" lastName="Jhala" /> */}
             {/* Anything we write between opening and closing tag, it will go to children prop */}
             <Greeting2 firstName="Kuldeep" lastName="Jhala" >
-            <h1>Hello Who are you ?</h1>
+                <h1>Hello Who are you ?</h1>
             </Greeting2>
-            
-
         </div >
     )
 }
