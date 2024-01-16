@@ -1,5 +1,5 @@
 function Greeting(props) {
-  // function Greeting({firstName, lastName, age}) { //<= this is parameter destructuring
+  // function Greeting({firstName, lastName, age, userArr, userObj}) { //<= this is parameter destructuring
   // console.log(props); //It is an object
   // const firstName = props.firstName;
   // const lastName = props.lastName;

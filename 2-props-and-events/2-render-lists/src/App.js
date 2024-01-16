@@ -6,6 +6,7 @@ const users = [
   { id: 2, firstName: "Kuldeep", lastName: "Jhala" },
   { id: 3, firstName: "Jay", lastName: "Dhobi" }
 ];
+
 //map method is only used to render list
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
       } */}
 
       {/* When list is static use the index as key. But when list is dynamic, you cannot use the index as a key. If we use index as a key then when one element is deleted then index value will be changed and error will occur. LESS PREFERABLE*/}
-      {
+      { 
         users.map((user, index) => <User {...user} key={index} />)
       }
 

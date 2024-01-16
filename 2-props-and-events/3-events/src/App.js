@@ -2,7 +2,7 @@ import Greeting from "./components/Greeting";
 
 function App() {
 
-  // when we click the button 'Click me', browser will call the function handelClick(). Then the browser will pass 'event-object' to the function => handelClick(e) where e is event which is automatically passed by browser.
+  // when we click the button 'Click me', browser will call the function handelClick(). Then the browser will pass 'event-object' to the function => handelClick(e) where e is event object which is automatically passed by browser.
   //In the function parameter we will accept the e => which is event object passed by browser
   //you can write e, event or anything.
   function handelClick(e) {

@@ -1,5 +1,5 @@
 import React from "react";
-//If the "fullName" prop is not send the we will use the default value for the fullName 
+//If the "fullName" prop is not send then we will use the default value for the fullName 
 function DefaultProps({ firstName, lastName, fullName = "KuldeepsinhJhala" }) {
   return (
     <div>
