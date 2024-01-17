@@ -6,11 +6,18 @@ function Counter() {
   //   function increaseCounter() {
   //     countValue++;
   //     setCountValue(countValue);
+  //     //   passing callback function in setState method.
+  //     setCountValue((previousState) => previousState++);
   //   }
 
   function decreaseCounter() {
-    countValue--;
-    setCountValue(countValue);
+    // Below we are diretly updating the state value in setState method.y
+    // setCountValue(countValue--);
+    //passing callback function in setState method.
+    //In this callback function we can accpet as a parameter a 'previousState or currentState'. It will be the state data itself.
+    setCountValue((previousState) => {
+      return previousState - 1;
+    });
   }
 
   //   function resetCounter() {
