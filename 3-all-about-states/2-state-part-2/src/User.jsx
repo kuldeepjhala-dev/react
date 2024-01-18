@@ -10,12 +10,20 @@ import React from "react";
 //   );
 // }
 
-function User({ firstName, lastName, age }) {
+function User({ firstName, lastName, age, id, increaseAge }) {
   return (
     <div className="user">
       <p>firstName : {firstName}</p>
       <p>lastName : {lastName}</p>
       <p>age : {age}</p>
+      <p>id : {id}</p>
+      <button
+        onClick={() => {
+          increaseAge(id);
+        }}
+      >
+        Increase Age
+      </button>
     </div>
   );
 }

@@ -40,12 +40,12 @@ import User from "../User";
 //   );
 // }
 
-function Users({ users }) {
+function Users({ users, increaseAge }) {
   return (
     <div>
       {/* It will first destructure the object and then it will pass multiple props */}
       {users.map((user) => (
-        <User {...user} key={user.id} />
+        <User {...user} key={user.id} increaseAge={increaseAge} />
       ))}
     </div>
   );
