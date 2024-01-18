@@ -1,5 +1,5 @@
 import React from "react";
-import User from "../User";
+import User from "./User";
 
 // function Users({ users }) {
 //   return (
@@ -40,12 +40,17 @@ import User from "../User";
 //   );
 // }
 
-function Users({ users, increaseAge }) {
+function Users({ users, increaseAge, deleteUser }) {
   return (
     <div>
       {/* It will first destructure the object and then it will pass multiple props */}
       {users.map((user) => (
-        <User {...user} key={user.id} increaseAge={increaseAge} />
+        <User
+          {...user}
+          key={user.id}
+          increaseAge={increaseAge}
+          deleteUser={deleteUser}
+        />
       ))}
     </div>
   );

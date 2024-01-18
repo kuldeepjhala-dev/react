@@ -12,11 +12,10 @@ function App() {
 
   //we are doing prop drilling as increaseAge function is passed from App.jsx => Users.jsx => User.jsx using props.
   function increaseAge(id) {
-
     // console.log(id);
     // console.log("increase Age");
 
-    //Programming way to update age
+    //Javascript Programming way to update age
     // const newState = [];
     // for (let user of users) {
     //   if (user.id == id) {
@@ -39,6 +38,30 @@ function App() {
         }
       })
     });
+  }
+
+  const deleteUser = (id) => {
+
+    // console.log(id, "delete User");
+
+    //Javascript Programming way to delete user
+    // const newState = [];
+    // for (let user of users) {
+    //   if (user.id !== id) {
+    //     newState.push(user);
+    //   }
+    // }
+    // setUsers(newState);
+
+    //React way to update age
+    // setUsers(prevState => {
+    //   return prevState.filter(user => {
+    //     return user.id !== id;
+    //   })
+    // });
+
+    //Shorter-way
+    setUsers(prevState => prevState.filter(user => user.id !== id));
 
   }
 
@@ -46,7 +69,7 @@ function App() {
     <div className="App">
       <h1>State Example</h1>
       {/* Passing state as  prop */}
-      <Users users={users} increaseAge={increaseAge} />
+      <Users users={users} increaseAge={increaseAge} deleteUser={deleteUser} />
     </div>
   );
 }

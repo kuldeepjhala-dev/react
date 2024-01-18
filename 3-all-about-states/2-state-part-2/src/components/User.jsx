@@ -10,7 +10,7 @@ import React from "react";
 //   );
 // }
 
-function User({ firstName, lastName, age, id, increaseAge }) {
+function User({ firstName, lastName, age, id, increaseAge, deleteUser }) {
   return (
     <div className="user">
       <p>firstName : {firstName}</p>
@@ -23,6 +23,13 @@ function User({ firstName, lastName, age, id, increaseAge }) {
         }}
       >
         Increase Age
+      </button>
+      <button
+        onClick={() => {
+          deleteUser(id);
+        }}
+      >
+        Delete User
       </button>
     </div>
   );
