@@ -1,11 +1,18 @@
-import React from 'react'
-
-function Todos() {
+import React from "react";
+import Todo from "./Todo";
+function Todos({ todos, toggleCompleted, removeTodo }) {
   return (
     <div>
-      todos
+      {todos.map((todo) => (
+        <Todo
+          {...todo}
+          key={todo.id}
+          toggleCompleted={toggleCompleted}
+          removeTodo={removeTodo}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default Todos
+export default Todos;

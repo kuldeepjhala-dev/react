@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 //hooks :
@@ -29,8 +28,8 @@ function SimpleStateExample() {
   //   console.log(firstName); // op : Kuldeep
   // }
 
-  // const returnedValue = useState("defaultKuldeep"); //state is created.
-  // console.log(returnedValue); //op : Array[2]. (stateValue, functionToUpdateThatStateValue).
+  // const returnedValue = useState("defaultKuldeep"); //state is created..
+  // console.log(returnedValue); //op : Array[2]. (stateValue, functionToUpdateThatStateValue)
   //When the state it created it will return two things in array[stateValue, functionToUpdateThatStateValue]. Below we are extracting the values from array and storing it in variables for usage.
   // const firstName = returnedValue[0];
   // const functionToUpdateFirstName = returnedValue[1];
