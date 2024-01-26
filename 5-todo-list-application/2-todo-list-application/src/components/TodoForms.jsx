@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
+import { toast } from "react-toastify";
+
 function TodoForms({ addTodo }) {
   const [title, setTitle] = useState("");
 
   function handelSubmit(e) {
     e.preventDefault();
     if (title.trim().length === 0) {
-      alert("please fill input");
+      // alert("please fill input");
+      toast.info("Please fill input", {
+        autoClose: 1500,
+      });
       return;
     }
     const newTodo = {
@@ -29,7 +34,9 @@ function TodoForms({ addTodo }) {
             setTitle(e.target.value);
           }}
         />
-        <button type="submit" className="todoForm__btn">Add</button>
+        <button type="submit" className="todoForm__btn">
+          Add
+        </button>
       </form>
     </div>
   );

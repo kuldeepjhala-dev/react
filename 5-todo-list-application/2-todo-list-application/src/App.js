@@ -2,6 +2,8 @@ import Todo from "./components/Todo";
 import TodoForms from "./components/TodoForms";
 import Todos from "./components/Todos";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -65,8 +67,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="main-title">TodoList</h1>
+      <h1 className="main-title">Todo List</h1>
       <TodoForms addTodo={addTodo} />
+      <ToastContainer/>
       <Todos todos={todos} toggleCompleted={toggleCompleted} removeTodo={removeTodo} />
     </div>
   );

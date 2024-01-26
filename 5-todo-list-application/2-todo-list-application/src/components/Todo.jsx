@@ -1,18 +1,9 @@
 import React from "react";
-
+import { ImCross } from "react-icons/im";
 function Todo({ id, title, completed, toggleCompleted, removeTodo }) {
   return (
-    <div>
-      <p
-        style={{
-          border: "2px solid #242424",
-          padding: "2rem",
-          margin: "1rem",
-        }}
-      >
-        id : {id} <br />
-        title : {title} <br />
-        status : {completed ? "Yes" : "No"} <br />
+    <div className="todo">
+      <div className="todo-title">
         <input
           type="checkbox"
           checked={completed}
@@ -20,9 +11,11 @@ function Todo({ id, title, completed, toggleCompleted, removeTodo }) {
             toggleCompleted(id);
           }}
         />
-        <br />
-        <button onClick={() => removeTodo(id)}>Remove</button>
-      </p>
+        <p className={`${completed ? "completed" : ""}`}>{title}</p>
+      </div>
+      <div className="cross-btn" onClick={() => removeTodo(id)}>
+        <ImCross />
+      </div>
     </div>
   );
 }
