@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       {/* <SimpleStateExample /> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <StateExampleArray /> */}
-      {/* <StateExampleObject /> */}
+      <StateExampleObject />
     </div>
   );
 }

@@ -10,7 +10,7 @@ function StateExampleObject() {
     age: 24,
   });
 
-  //It will replace the object and makes a new obect with data 'age:age+1'.
+  //It will replace the object and makes a new object with data 'age:age+1'.
   // const increaseAge = () => {
   //   setPreson({
   //     age: person.age + 1,
@@ -55,12 +55,12 @@ function StateExampleObject() {
     //     or
 
     //Callback Syntax
-    setPreson((prevState) => {
-      return {
-        ...prevState,
-        age: prevState.age + 1,
-      };
-    });
+    // setPreson((prevState) => {
+    //   return {
+    //     ...prevState,
+    //     age: prevState.age + 1,
+    //   };
+    // });
 
     //without return keyword just add () brackets after => so it will consider it as a return statement
     setPreson((prevState) => ({ ...prevState, age: prevState.age + 1 }));
@@ -77,5 +77,4 @@ function StateExampleObject() {
     </div>
   );
 }
-
 export default StateExampleObject;
