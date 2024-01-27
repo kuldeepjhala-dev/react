@@ -35,7 +35,7 @@ function HandelMultipleInput() {
     phone,
     address,
   } = formData;
-git 
+
   return (
     <>
       <form style={{ padding: "1rem" }} onSubmit={handelSubmit}>
