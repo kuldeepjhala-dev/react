@@ -16,7 +16,7 @@ function App() {
         setGender("female");
       }} />
       <br />
-      <label htmlFor="female">others</label>
+      <label htmlFor="others">others</label>
       <input type="radio" checked={gender === "others"} onChange={() => {
         setGender("others");
       }} />
