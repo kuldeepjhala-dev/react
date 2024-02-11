@@ -21,7 +21,7 @@ function HandelMultipleInput() {
     // console.log(e.target.id);
     // console.log(e.target.value);
     setFormData((prevState) => {
-      return { ...prevState, [e.target.id]: e.target.value };
+      return { ...prevState, [e.target.id]: e.target.value }; //here object is updated. Specific id on change is selected and assigne data.
     });
   };
 

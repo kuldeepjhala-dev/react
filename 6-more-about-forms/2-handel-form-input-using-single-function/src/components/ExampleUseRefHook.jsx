@@ -17,8 +17,9 @@ function ExampleUseRefHook() {
   const userNameRef = useRef();
   const passwordRef = useRef();
 
+  console.log("const userName = useRef('Kuldeep'); ");
   console.log("Component Rendered");
-  console.log("userName.current", userName.current);
+  console.log("userName.current = ", userName.current);
   console.log("Before button click 'userName.current': ", userName.current);
 
   const handelClick = () => {
@@ -30,6 +31,7 @@ function ExampleUseRefHook() {
     console.log(h1Ref); // op : {current: h1}
     const h1Element = h1Ref.current; // storing reference in variable to make changes.
     console.log(h1Element); // op : <h1>This is h1 element which will be stored in 'ref' </h1>
+    //making changes in h1Element
     h1Element.textContent = "H1 element value updated using ref"; //change text of h1 element.
     h1Element.style.background = "blue"; // change background of h1 element.
     h1Element.style.color = "white"; // change font color of h1 element.
