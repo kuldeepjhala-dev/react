@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       {/* <Hello /> */}
-      {/* <Greeting /> */}
+      <Greeting />
       {/* <Greetings2 /> */}
-      <Greeting3 />
+      {/* <Greeting3 /> */}
     </>
   );
 }

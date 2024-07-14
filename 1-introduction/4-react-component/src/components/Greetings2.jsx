@@ -26,11 +26,11 @@ function Greetings2() {
       {/* Below is example of External css*/}
       {/* <p className={isDarkMode && "bg-dark"}> */} {/* Condition class */}
       {/* Below is Condition class and normal class togethere */}
-      {/* <p className={`container ${isDarkMode && "bg-dark"}`}> */}
+      {/* <p className={`container ${isDarkMode && "bg-dark"}`}> */}  
       <p className={`container ${isDarkMode ? "bg-dark" : ""}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
         dolore?
-      </p>  
+      </p>
     </div>
   );
 }

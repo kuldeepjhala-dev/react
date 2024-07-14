@@ -1,4 +1,3 @@
-import './App.css';
 import User from './components/User';
 
 const users = [

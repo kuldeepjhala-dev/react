@@ -41,8 +41,6 @@ function StateExampleObject() {
       ...person,
       age: 30 //This will update the age value from 24 to 30.
     }
-
-
   */
   }
 
@@ -51,9 +49,7 @@ function StateExampleObject() {
     //   ...person,
     //   age: person.age + 1,
     // });
-
     //     or
-
     //Callback Syntax
     // setPreson((prevState) => {
     //   return {

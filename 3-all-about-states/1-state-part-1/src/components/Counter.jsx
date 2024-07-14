@@ -3,12 +3,12 @@ import { useState } from "react";
 function Counter() {
   let [countValue, setCountValue] = useState(0);
 
-  //   function increaseCounter() {
-  //     countValue++;
-  //     setCountValue(countValue);
-  //     //   passing callback function in setState method.
-  //     setCountValue((previousState) => previousState++);
-  //   }
+    function increaseCounter() {
+      countValue++;
+      setCountValue(countValue);
+      //   passing callback function in setState method.
+      setCountValue((previousState) => previousState++);
+    }
 
   function decreaseCounter() {
     // Below we are diretly updating the state value in setState method.y
@@ -20,10 +20,10 @@ function Counter() {
     });
   }
 
-  //   function resetCounter() {
-  //     countValue = 0;
-  //     setCountValue(countValue);
-  //   }
+    function resetCounter() {
+      countValue = 0;
+      setCountValue(countValue);
+    }
 
   return (
     <>

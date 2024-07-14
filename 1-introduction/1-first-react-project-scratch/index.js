@@ -5,7 +5,6 @@ const rootElement = document.getElementById("root");
 // const el = React.createElement("h1", { className: "heading" }, "Hello Wor"); //el is an element which is just an object
 // ReactDOM.createRoot(rootElement).render(el);
 
-
 ///////=> using core js and function
 // function helloWorld() {
 //   return   React.createElement("h1", { className: "heading" }, "Hello from function" );

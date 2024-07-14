@@ -10,6 +10,9 @@ function Greeting() {
     <div className="bg-dark">
       {/*use className instead of class*/}
       <h1>Hello {firstName(FirstName)}</h1> {/*if you want to use javascript*/}
+      <h1>Hello {`${firstName(FirstName)} how are you`}</h1>
+      {/*Template string*/}
+      <h1>hello, {2 * 3}</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
         architecto tempora quae voluptate consequuntur necessitatibus
