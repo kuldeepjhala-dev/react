@@ -1,13 +1,11 @@
-import './App.css';
-import { useState } from 'react';
-import Users from './components/Users';
+import { useState } from "react";
+import Users from "./components/Users";
 
 function App() {
-
   const [users, setUsers] = useState([
     { id: 1, firstName: "Kuldeep", lastName: "Jhala", age: 25 },
     { id: 2, firstName: "Jay", lastName: "Dhobi", age: 25 },
-    { id: 3, firstName: "Viral", lastName: "Kapadia", age: 30 }
+    { id: 3, firstName: "Viral", lastName: "Kapadia", age: 30 },
   ]);
 
   //we are doing prop drilling as increaseAge function is passed from App.jsx => Users.jsx => User.jsx using props.
@@ -28,20 +26,18 @@ function App() {
     // setUsers(newState);
 
     //React way to update age
-    setUsers(prevState => {
-      return prevState.map(user => {
+    setUsers((prevState) => {
+      return prevState.map((user) => {
         if (user.id === id) {
           return { ...user, age: user.age + 1 };
-        }
-        else {
+        } else {
           return user;
         }
-      })
+      });
     });
   }
 
   const deleteUser = (id) => {
-
     // console.log(id, "delete User");
 
     //Javascript Programming way to delete user
@@ -61,9 +57,8 @@ function App() {
     // });
 
     //Shorter-way
-    setUsers(prevState => prevState.filter(user => user.id !== id));
-
-  }
+    setUsers((prevState) => prevState.filter((user) => user.id !== id));
+  };
 
   return (
     <div className="App">
