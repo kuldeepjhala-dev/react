@@ -1,0 +1,9 @@
+.todoList {
+    padding: 5px;
+    margin: 5px;
+    border: 2px dotted white;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: orange;
+}
