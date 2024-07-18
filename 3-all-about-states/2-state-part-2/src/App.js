@@ -5,7 +5,7 @@ function App() {
   const [users, setUsers] = useState([
     { id: 1, firstName: "Kuldeep", lastName: "Jhala", age: 25 },
     { id: 2, firstName: "Jay", lastName: "Dhobi", age: 25 },
-    { id: 3, firstName: "Viral", lastName: "Kapadia", age: 30 },
+    { id: 3, firstName: "Viral", lastName: "Kapadia sir", age: 30 },
   ]);
 
   //we are doing prop drilling as increaseAge function is passed from App.jsx => Users.jsx => User.jsx using props.

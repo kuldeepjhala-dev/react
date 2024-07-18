@@ -1,17 +1,15 @@
-import './App.css';
 import { useState } from "react";
 import { password } from "react";
 //All form data is stored in state. If I have 2 input fields then I need 2 states.
-//There are two types of form 
+//There are two types of form
 //1. Controlled components
 // Here in "<input type="text" id="username" value={ userName } />" input field the value attribute is always our state's data. So its value is controlled. The value which is in userName state will be in the inputField. So our component is controllled using react state
 //2. Uncontrolled components
 function App() {
-
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log("outside function 'userName' => " + userName)
+  console.log("outside function 'userName' => " + userName);
 
   function handelUserName(e) {
     setUserName(e.target.value); //username set
@@ -30,15 +28,27 @@ function App() {
   return (
     <div className="App">
       <h1>Form Tutorial </h1>
-      <form onSubmit={handelSubmit}> {/* page will refresh when submit button is clicked */}
+      <form onSubmit={handelSubmit}>
+        {" "}
+        {/* page will refresh when submit button is clicked */}
         <label htmlFor="username">username: </label>
-        <input type="text" id="username" value={userName} onChange={handelUserName} />
+        <input
+          type="text"
+          id="username"
+          value={userName}
+          onChange={handelUserName}
+        />
         <br />
         <label htmlFor="pasword">password: </label>
-        <input type="password" id="password" value={password} onChange={(e) => {
-          setPassword(e.target.value);
-          console.log(e.target.value);
-        }} />
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+            console.log(e.target.value);
+          }}
+        />
         <br />
         <button type="submit">Submit</button>
       </form>
