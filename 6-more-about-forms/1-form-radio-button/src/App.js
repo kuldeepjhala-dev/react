@@ -1,25 +1,41 @@
-import './App.css';
 import { useState } from "react";
 
 function App() {
-  const [gender, setGender] = useState("male");
+  const [checkboxstate, setCheckboxState] = useState("male");
   return (
     <div className="App">
-      <h1>Radio Button</h1>
-      <label htmlFor="male">Male</label>
-      <input type="radio" checked={gender === "male"} onChange={() => {
-        setGender("male");
-      }} />
-      <br />
-      <label htmlFor="female">Female</label>
-      <input type="radio" checked={gender === "female"} onChange={() => {
-        setGender("female");
-      }} />
-      <br />
-      <label htmlFor="others">others</label>
-      <input type="radio" checked={gender === "others"} onChange={() => {
-        setGender("others");
-      }} />
+      <h1>Radio Buttons</h1>
+      <form>
+        <label htmlFor="male">Male: </label>
+        <input
+          type="checkbox"
+          id="male"
+          checked={checkboxstate === "male"}
+          onChange={(e) => {
+            setCheckboxState("male");
+          }}
+        />
+
+        <label htmlFor="female">Female: </label>
+        <input
+          type="checkbox"
+          id="female"
+          checked={checkboxstate === "female"}
+          onChange={(e) => {
+            setCheckboxState("female");
+          }}
+        />
+
+        <label htmlFor="other">Other: </label>
+        <input
+          type="checkbox"
+          id="other"
+          checked={checkboxstate === "other"}
+          onChange={(e) => {
+            setCheckboxState("other");
+          }}
+        />
+      </form>
     </div>
   );
 }
